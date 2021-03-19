@@ -12,6 +12,7 @@ int main(void)
 	int acu=0;
 	float promedio;
 	int i;
+	int continuar;
 
 	for (i = 0 ; i < TAM ; i++)
 	{
@@ -20,7 +21,8 @@ int main(void)
 
 		printf (" Continuar? [si:1 / no:0]:");
 		scanf("%d",&continuar);
-
+		if(continuar==0)
+			break;
 
 		acu = acu + nro;
 	}
